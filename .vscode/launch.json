@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/GradeBook/bin/Debug/net5.0/GradeBook.dll",
+            "program": "${workspaceFolder}/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/GradeBook",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
