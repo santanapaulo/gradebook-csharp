@@ -3,10 +3,10 @@ using Xunit;
 
 namespace GradeBook.tests
 {
-    public class BookTests
+    public class TypeTests
     {
         [Fact]
-        public void Test1()
+        public void BookCalculatesAnAverageGrade()
         {
             var book = new Book("Test");
             book.AddGrade(89.1);
@@ -14,10 +14,9 @@ namespace GradeBook.tests
             book.AddGrade(77.3);
 
             var result = book.GetStatistics();
-            Assert.Equal(85.6, result.average, 1);
-            Assert.Equal(90.5, result.high, 1);
-            Assert.Equal(77.3, result.low, 1);
-
+            Assert.Equal(85.6, result.Average, 1);
+            Assert.Equal(90.5, result.High, 1);
+            Assert.Equal(77.3, result.Low, 1);
         }
     }
 }
