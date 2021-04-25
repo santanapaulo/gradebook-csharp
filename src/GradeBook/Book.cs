@@ -32,6 +32,29 @@ namespace GradeBook
             }
 
             statistics.Average /= grades.Count;
+
+            switch(statistics.Average)
+            {
+                case var average when average >= 90:
+                    statistics.Letter = 'A'; 
+                    break;
+
+                case var average when average >= 80:
+                    statistics.Letter = 'B'; 
+                    break;
+                
+                case var average when average >= 70:
+                    statistics.Letter = 'C'; 
+                    break;
+
+                case var average when average >= 60:
+                    statistics.Letter = 'D'; 
+                    break;
+
+                default:
+                    statistics.Letter = 'F';
+                    break;
+            }
             return statistics;
         }
     }
