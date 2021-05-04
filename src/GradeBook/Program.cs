@@ -6,8 +6,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book = new Book("PH book");
-            book.GradeAdded += OnGradeAdded;
+            var book = new DiskBook("PH book");
             book.AddGrade(89.1);
             book.AddGrade(90.50);
             book.AddGrade(77.5);
